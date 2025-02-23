@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Filtreeri kallimaid tooteid</h2>
+<form method="POST" action="">
+    <label>Hind &gt; 
+        <input type="text" name="price_limit" placeholder="Sisesta hind">
+    </label>
+    <button type="submit">Otsi</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>MyProtein products</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>MyProtein products</h1>
+    <nav>
+      <a class="button" href="{{ url_for('index') }}">Kõik tooted</a>
+      <a class="button" href="{{ url_for('filter_products') }}">Kallimad kui X</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
